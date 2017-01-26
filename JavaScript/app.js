@@ -1,11 +1,13 @@
 
 
-var a = 1;
-var b = "anónimo";
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a = "Anónimo";
+var b = 3;
+var c = true;
 
 console.log(a);
-console.warn(a);
-console.error(a);
-console.info(a);
-
-console.log( a + a );
+console.log(b);
+console.log(c);
