@@ -1,13 +1,15 @@
 
 
-console.log(a);
-console.log(b);
-console.log(c);
+function imprimir(){
 
-var a = "Anónimo";
-var b = 3;
-var c = true;
+    for( var i = 0; i < 800; i++)
+    {
+        console.log( "Imprimio" );
+    }
+}
 
-console.log(a);
-console.log(b);
-console.log(c);
+function presionoClick(){
+    console.log("Click en botón");
+}
+
+imprimir();
