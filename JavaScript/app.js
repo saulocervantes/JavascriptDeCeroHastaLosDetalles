@@ -1,17 +1,28 @@
 
 
-var num = 10;
-var str = "texto";
-var bol = true;
-var und = undefined;
-var nul = null;
+var a = 10;
+var b = a;
 
-var obj = {
-    numero: 10,
-    texto: "Nuevo texto",
+console.log("a: ", a);
+console.log("b: ", b);
 
-    objHijo: {
-        numero2: 20,
-        text2: "Número texto 2"
-    }
-};
+a = 20;
+
+console.log("a: ", a);
+console.log("b: ", b);
+
+var c = {
+    nombre: "Juana"
+}
+
+var d = c;
+
+console.log("c: ", c);
+console.log("d: ", d);
+
+c.nombre = "María";
+
+console.log("c: ", c);
+console.log("d: ", d);
+
+d.nombre = "Pedro";
