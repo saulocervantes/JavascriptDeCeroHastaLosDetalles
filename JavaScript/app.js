@@ -1,10 +1,11 @@
 
 
-function imprimir( nombre, apellido ){
-
-    apellido = apellido || "xxx";
-
-    console.log( nombre + " " + apellido );
+function imprimir( persona ){
+    console.log( persona.nombre + " " + persona.apellido );
 }
 
-imprimir( "Juan" );
+imprimir({
+
+    nombre: "Juan",
+    apellido: "Padilla"
+});
