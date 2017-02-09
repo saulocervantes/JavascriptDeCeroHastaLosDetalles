@@ -31,5 +31,21 @@ function crearPersona( nombre, apellido ){
 }
 
 var persona = crearPersona("Maria", "Paz");
-console.log( persona.nombre );
-console.log( persona.apellido );
+
+function creaFuncion(){
+
+    return function( nombre ){
+        console.log( "Me creo " + nombre );
+
+        return function(){
+            console.log("Segunda función");
+        }
+    }
+
+}
+
+var nuevaFuncion = creaFuncion();
+
+var segundaFuncion = nuevaFuncion( persona.nombre );
+
+segundaFuncion();
