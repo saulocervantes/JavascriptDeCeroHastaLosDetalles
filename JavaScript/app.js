@@ -14,10 +14,6 @@ var persona = {
     }
 };
 
-persona.direccion.zipcode = 11101;
+var campo = "edad";
 
-var edificio = persona.direccion.edificio;
-
-edificio.nopiso = "8vo piso";
-
-console.log( persona );
+console.log( persona[campo] );
