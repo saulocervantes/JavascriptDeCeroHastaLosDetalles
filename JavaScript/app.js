@@ -1,11 +1,11 @@
 
 
-function imprimir( persona ){
-    console.log( persona.nombre + " " + persona.apellido );
+function imprimir( fn ){
+    fn();
 }
 
-imprimir({
+var miFuncion = function(){
+    console.log("miFuncion");
+}
 
-    nombre: "Juan",
-    apellido: "Padilla"
-});
+imprimir( miFuncion );
