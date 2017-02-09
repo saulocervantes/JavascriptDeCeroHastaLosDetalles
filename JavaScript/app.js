@@ -1,7 +1,10 @@
 
 
-function primeraFuncion(){
-    console.log( "Invocada" );
+function imprimir( nombre, apellido ){
+
+    apellido = apellido || "xxx";
+
+    console.log( nombre + " " + apellido );
 }
 
-var miFuncion = primeraFuncion;
+imprimir( "Juan" );
