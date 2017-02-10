@@ -1,31 +1,19 @@
 
-var nombre = "Juan Carlos";
 
-var persona = {
-
-    nombre: "María",
-    apellido: "Dubon",
-    imprimirNombre: function(){
-        console.log( this.nombre + " " + this.apellido );
-    },
-    direccion: {
-        pais: "Costa Rica",
-        obtenerPais: function(){
-            
-            var self = this;
-
-            var nuevaDireccion = function(){
-                console.log( this );
-                console.log("La dirección es en " + self.pais );
-            }
-
-            nuevaDireccion();
-        }
+function Persona(nombre, apellido){
+    
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = 30;
+    this.imprimirPersona = function(){
+        return this.nombre + " " + this.apellido + "(" + this.edad + ")";
     }
-
+    
 }
 
-persona.imprimirNombre();
-persona.direccion.obtenerPais();
+var juan = new Persona("Juan", "Mendoza");
 
+console.log( juan );
+console.log( juan.nombre );
+console.log( juan.imprimirPersona());
 
