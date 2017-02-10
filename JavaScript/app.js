@@ -15,5 +15,11 @@ Persona.prototype.imprimirInfo = function(){
 
 var fer = new Persona();
 
-console.log( fer );
-console.log( fer.imprimirInfo() );
+
+Number.prototype.esPositivo = function () {
+    if( this > 0 ){
+        return true;
+    }else{
+        return false;
+    }
+}
