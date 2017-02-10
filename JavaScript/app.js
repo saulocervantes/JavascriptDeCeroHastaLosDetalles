@@ -2,19 +2,17 @@
 
 function identifica( param ){
 
-    console.log( typeof param );
+    if( typeof param == "function" ){
+        param();
+    }else{
+        console.log( param );
+    }
 
 }
 
-function Persona(){
 
-}
+identifica( function(){
+    console.log( "Soy anonima" );
+} );// function
 
-var juan = new Persona();
-
-identifica( 1 );// number
-identifica( "1" );// string
-identifica( true );// boolean
-identifica( {} );// object
-identifica( juan );// object
-identifica( function(){} );// function
+identifica( 2 );
