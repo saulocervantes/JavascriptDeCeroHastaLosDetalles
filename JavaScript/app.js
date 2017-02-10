@@ -1,51 +1,28 @@
 
 
-function obtenerAleatorio(){
-    return Math.random();
+
+
+
+function a() {
+    
+    console.log("Función a");
+
 }
 
-function obtenerNombre(){
-    return "Juan";
-}
+a();
 
-function esMayor05(){
-
-    if ( obtenerAleatorio() > 0.5 ) {
-        return true;
-    }else{
-        return false;
+a.nombre = "María";
+a.direccion = {
+    pais: "Costa Rica",
+    ciudad: "San José",
+    edificio:{
+        piso: "8vo",
+        nombre: "Edificio principal"
     }
 }
 
-if( esMayor05() ){
-    console.log("Es mayor a 0.5");
-}else{
-    console.log("Es menor a 0.5");
-}
 
-function crearPersona( nombre, apellido ){
-    return{
-        nombre: nombre,
-        apellido: apellido
-    }
-}
 
-var persona = crearPersona("Maria", "Paz");
 
-function creaFuncion(){
 
-    return function( nombre ){
-        console.log( "Me creo " + nombre );
 
-        return function(){
-            console.log("Segunda función");
-        }
-    }
-
-}
-
-var nuevaFuncion = creaFuncion();
-
-var segundaFuncion = nuevaFuncion( persona.nombre );
-
-segundaFuncion();
