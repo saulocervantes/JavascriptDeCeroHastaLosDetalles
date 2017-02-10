@@ -1,25 +1,15 @@
 
+(function(){
+    var a = 10;
 
-function Persona(){
-    this.nombre = "Fernando";
-    this.apellido = "Herrera";
-    this.edad = 30;
-    this.pais = "Costa Rica";
+    console.log(a);
 
-    // this.imprimirInfo = 
-}
-
-Persona.prototype.imprimirInfo = function(){
-        console.log( this.nombre + " " + this.apellido + "(" + this.edad + ")");
-}
-
-var fer = new Persona();
-
-
-Number.prototype.esPositivo = function () {
-    if( this > 0 ){
-        return true;
-    }else{
-        return false;
+    function cambiarA() {
+        a = 20;
     }
-}
+
+    cambiarA();
+
+    console.log(a);
+})();
+
