@@ -1,18 +1,20 @@
 
 
-function ejecutarFuncion( fn ){
+function identifica( param ){
 
-    if( fn() === 1 ){
-        return true;
-    }else{
-        return false;
-    }
+    console.log( typeof param );
 
 }
 
-console.log(
-    ejecutarFuncion(function () {
-        console.log("Función anónima ejecutada!");
-        return 0;
-    })
-);
+function Persona(){
+
+}
+
+var juan = new Persona();
+
+identifica( 1 );// number
+identifica( "1" );// string
+identifica( true );// boolean
+identifica( {} );// object
+identifica( juan );// object
+identifica( function(){} );// function
