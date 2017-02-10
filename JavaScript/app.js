@@ -1,28 +1,19 @@
 
+var nombre = "Juan Carlos";
 
+var persona = {
 
-
-
-function a() {
-    
-    console.log("Función a");
-
-}
-
-a();
-
-a.nombre = "María";
-a.direccion = {
-    pais: "Costa Rica",
-    ciudad: "San José",
-    edificio:{
-        piso: "8vo",
-        nombre: "Edificio principal"
+    nombre: "María",
+    apellido: "Dubon",
+    imprimirNombre: function(){
+        console.log( this.nombre + " " + this.apellido );
     }
+
 }
 
+persona.nombre = "Andrés";
 
-
+persona.imprimirNombre();
 
 
 
