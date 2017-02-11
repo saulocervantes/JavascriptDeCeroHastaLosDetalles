@@ -2,17 +2,16 @@
 
 function identifica( param ){
 
-    if( typeof param == "function" ){
-        param();
-    }else{
-        console.log( param );
-    }
+    console.log( typeof param );
+    console.log( param instanceof Persona );
 
 }
 
+function Persona(){
+    this.nombre = "Fernando";
+    this.edad = 30;
+}
 
-identifica( function(){
-    console.log( "Soy anonima" );
-} );// function
+var fernando = new Persona();
 
-identifica( 2 );
+identifica( fernando );
